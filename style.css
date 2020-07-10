@@ -19,6 +19,7 @@ nav {
     margin: auto;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .nav-items {
     display: flex;
@@ -30,25 +31,28 @@ nav {
     height: 40px;
 }
 .register {
-    margin-left: 100px;
+    /* margin-left: 10%; */
     padding: 5px 20px;
     border-radius: 15px;
     background-color: rgb(37, 36, 36);
 }
-.nav-items > a {
+.nav-items > a, aside > a {
     text-decoration: none;
     color: white;
     font-size: 0.9em;
 }
+.hamburger {
+    display: none;
+}
 .hero {
     background-color: white;
-    height: 480px;
+    height: 470px;
     width: 75%;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 60px 80px;
+    padding: 60px 7%;
     position: relative;
     z-index: 1;
 }
@@ -57,71 +61,136 @@ nav {
 }
 .hero-text {
     flex: 1;
+    position: relative;
 }
 .hero-text > a {
     text-decoration: none;
     color: white;
     background-color: #F46632;
-    padding: 10px 80px;
+    padding: 10px 3.5vw;
     border-radius: 7px;
     font-weight: 700;
     font-size: 0.9em;
 }
 .p-text {
     font-weight: 400;
-    font-size: 1em;
-    margin: 50px 0;
-    width: 80%;
-    line-height: 35px;
+    font-size: 1.1vw;
+    margin: 40px 0;
+    width: 75%;
+    line-height: 3vw;
 }
 .hero-text > h1 {
     font-weight: 900;
-    font-size: 2.5em;
-    margin: 20px 0;
+    font-size: 2.5vw;
+    margin: 2vw 0;
 }
 .hero-text > h2 {
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.8vw;
     color: rgb(78, 78, 78);
 }
 .about-us {
     background-color: rgb(235, 229, 229);
     height: 1000px;
 }
-
-@media(max-width:768px) {
-    
+.fade {
+    position: absolute;
+    top: 35px;
+    left: -4px;
+    letter-spacing: 1.2vw;
+    font-weight: 900;
+    font-size: 8vw;
+    background: -webkit-linear-gradient(#fff, rgb(230, 227, 227));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
 }
-/* @media(max-width:1024px) {
+aside {
+    display: none;
+}
+
+/* media queries */
+@media(max-width:1140px) {
+    .hamburger {
+        background-color: #fff;
+        height: 30px;
+        width: 30px;
+        display: block;
+        margin-left: 10px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .nav-items {
+        margin: 0 10px 0 70px;
+    }
     .nav-item {
         display: none;
     }
-    .register {
-        margin-left: auto;
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        height: 85vh;
+        width: 250px;
+        background-color: rgba(65, 65, 66, 0.692);
+        /* margin-left: auto; */
+        z-index: 2;
+        justify-content: space-evenly;
     }
-} */
-@media(max-width:1230px) {
-    .nav-item {
-        display: none;
+    .aside-item {
+        height: 8vh;
+        /* width: 100%; */
+        font-size: 2.5vh;
+        border-bottom: 1px solid rgb(80, 79, 78);
     }
-    .register {
-        margin-left: auto;
+}
+
+@media(max-width:1018px) {
+    .hero > img {
+        height: 300px;
     }
     .p-text {
-        font-weight: 400;
-        font-size: 1em;
-        margin: 30px 0;
-        width: 80%;
-        line-height: 25px;
+        font-size: 0.8rem;
+        margin: 50px 0;
+        line-height: 3vw;
+    }
+    .hero {
+        height: 470px;
+    }
+    .nav-item {
+        display: none;
+    }
+    
+}
+
+@media(max-width:828px) {
+    .p-text {
+        font-size: 1rem;
+        margin: 50px 0;
+        line-height: 1.5rem;
+    }
+    .hero > img {
+        display: none;
+    }
+    .hero-text {
+        margin: 0 5%;
     }
     .hero-text > h1 {
         font-weight: 900;
-        font-size: 2.5em;
-        margin: 10px 0;
+        font-size: 5vw;
+        margin: 2vw 0;
     }
     .hero-text > h2 {
         font-weight: 500;
-        font-size: 1.8em;
+        font-size: 4vw;
         color: rgb(78, 78, 78);
     }
+    .fade {
+        font-size: 18vw;
+    }
 }
+
+
