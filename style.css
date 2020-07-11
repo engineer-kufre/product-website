@@ -91,7 +91,7 @@ nav {
 }
 .about-us {
     background-color: rgb(235, 229, 229);
-    height: 150vh;
+    height: 140vh;
     position: absolute;
     width: 100%;
 }
@@ -153,7 +153,6 @@ aside {
 }
 .about-us-text-top img {
     width: 50%;
-    /* transform: translate(0%, -70%); */
     position: absolute;
     top: -130px;
 }
@@ -165,7 +164,6 @@ aside {
     border-radius: 20px;
     padding: 60px 7%;
     position: relative;
-    border: 1px solid black;
 }
 .fade-course-experience {
     position: absolute;
@@ -220,6 +218,98 @@ aside {
     width: 25%;
     margin-top: 60px;
 }
+.sessions {
+    background-color: rgb(243, 240, 240);
+    top: 140vh;
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    padding-top: 300px;
+    z-index: -1;
+}
+.sessions-text {
+    background-color: rgb(243, 240, 240);
+    height: 70vh;
+    width: 75%;
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+}
+.fade-sessions {
+    position: absolute;
+    top: 45px;
+    left: 27vw;
+    font-weight: 900;
+    font-size: 5vw;
+    background: -webkit-linear-gradient(rgb(236, 234, 234), rgb(182, 181, 181));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title {
+    margin: 20px 0 120px 0;
+}
+.title > h1 {
+    font-size: 1.5vw;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.session-list-top-item {
+    display: flex;
+    align-items: center;
+}
+.session-list-top-item img {
+    margin-right: 10px;
+    width: 20px;
+}
+.session-list-top-item p {
+    font-size: 0.9vw;
+}
+.last-item {
+    margin-right: 25%;
+}
+.session-list-top {
+    display: flex;
+    padding: 5px;
+    background-color: rgba(184, 178, 178, 0.295);
+    border-left: 5px solid black;
+}
+.session-list-top h3 {
+    flex: 1;
+    padding-left: 30px;
+}
+.session-list-top-items {
+    display: flex;
+    flex: 4;
+    justify-content: space-evenly;
+    border: 1px;
+}
+.one-session {
+    width: 100%;
+}
+.session-list-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 5px solid rgb(228, 222, 222);
+}
+.session-list-bottom-text p {
+    font-size: 1vw;
+}
+.session-list-bottom-text {
+    flex: 4;
+    padding: 35px 90px 35px 65px;
+    line-height: 25px;
+}
+.session-list-bottom-img {
+    flex: 1;
+    padding: 45px 35px;
+}
+.session-list-bottom-img img {
+    width: 60px;
+}
+
+
 
 /* media queries */
 @media(max-width:1140px) {
