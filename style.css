@@ -135,6 +135,16 @@ aside {
     -webkit-text-fill-color: transparent;
     z-index: 1;
 }
+.social-media-icons {
+    margin-top: -15px;
+    margin-left: 100px;
+}
+.social-media-icons div {
+    margin-bottom: 15px;
+}
+.social-media-icons i {
+    font-size: 1.4em;
+}
 .about-us-text-top > h1 {
     align-self: start;
     font-size: 1.5vw;
@@ -145,7 +155,7 @@ aside {
 .about-us-text > .p-text {
     font-weight: 400;
     font-size: 1vw;
-    margin: 90px 0;
+    margin: 40px 0;
     width: 100%;
     line-height: 2.5vw;
 }
@@ -264,6 +274,10 @@ aside {
     margin-right: 10px;
     width: 20px;
 }
+.session-list-top-item span {
+    margin-right: 10px;
+    width: 20px;
+}
 .session-list-top-item p {
     font-size: 0.9vw;
 }
@@ -349,10 +363,41 @@ aside {
     background-color: #EBE5E5;
     top: 140vh;
     position: relative;
-    height: 425vh;
+    height: 300vh;
     width: 100%;
     padding-top: 300px;
-    /* z-index: -2; */
+}
+.faq {
+    background-color: transparent;
+    height: 500px;
+    width: 75%;
+    margin: 120px auto 0 auto;
+    border-radius: 20px;
+    padding: 60px 0;
+    position: relative;
+}
+.faq .title p {
+    margin-left: 70px;
+    font-size: 80px;
+}
+.question i {
+    font-size: 0.8em;
+}
+.questions {
+    margin-top: -50px;
+}
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.question p {
+    font-size: 1vw;
 }
 .course-fee {
     background-color: white;
@@ -450,7 +495,14 @@ aside {
     height: 400px;
     padding-left: 200px;
 }
-
+footer {
+    background-color: white;
+    top: 140vh;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    border: 1px solid red;
+}
 
 /* media queries */
 @media(max-width:1140px) {
