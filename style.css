@@ -54,7 +54,7 @@ nav {
     justify-content: space-between;
     padding: 60px 7%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .hero > img {
     height: 350px;
@@ -94,6 +94,7 @@ nav {
     height: 140vh;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 .fade {
     position: absolute;
@@ -225,7 +226,7 @@ aside {
     height: 425vh;
     width: 100%;
     padding-top: 300px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .sessions-text {
     background-color: transparent;
@@ -307,6 +308,7 @@ aside {
 }
 .session-list-bottom-img img {
     width: 60px;
+    margin-right: 10px;
 }
 .masters {
     background-color: white;
@@ -337,7 +339,7 @@ aside {
     width: 140px;
 }
 .masters-item p {
-    font-size: 0.9vw;
+    font-size: 12px;
     margin-top: 7px;
 }
 .masters-item h5 {
@@ -350,7 +352,7 @@ aside {
     height: 425vh;
     width: 100%;
     padding-top: 300px;
-    z-index: -2;
+    /* z-index: -2; */
 }
 .course-fee {
     background-color: white;
@@ -368,11 +370,14 @@ aside {
     margin: -50px auto;
 }
 .course-fee-bottom-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: black;
     color: white;
     border-radius: 10px;
     margin-left: 50px;
-    text-align: center;
     width: 350px;
     height: 200px;
 }
@@ -382,10 +387,17 @@ aside {
 .course-fee-bottom-register p {
     font-size: 1vw;
 }
-.course-fee-bottom-text ul li {
-    font-size: 0.9vw;
-    margin-top: 18px;
-    list-style-type: none;
+.list-item {
+    display: flex;
+    align-items: center;
+}
+.course-fee-bottom-text .list-item p {
+    font-size: 1vw;
+    margin-top: 16px;
+}
+.course-fee-bottom-text .list-item img {
+    margin: 18px 15px 0 0;
+    height: 20px;
 }
 .course-fee > p {
     font-size: 0.9vw;
@@ -393,8 +405,50 @@ aside {
     text-align: center;
     margin-top: 120px;
 }
-.space {
-    margin-top: 20px;
+.register-email {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0 6% 0 10%;
+    height: 400px;
+    position: relative;
+}
+.register-email-text {
+    flex: 1;
+    margin: auto 0;
+}
+.register-email-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.register-email-text p {
+    font-size: 13px;
+}
+.list-item img {
+    height: 20px;
+    margin-right: 5px;
+}
+.register-email-text input {
+    margin: 20px 0;
+    color: white;
+    width: 30vw;
+    padding: 9px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(32, 32, 32);
+}
+.register-email-images {
+    flex: 1;
+}
+.register-email-images .main {
+    height: 150px;
+    top: 120px;
+    position: absolute;
+    right: 17%;
+}
+.register-email-images .background {
+    height: 400px;
+    padding-left: 200px;
 }
 
 
