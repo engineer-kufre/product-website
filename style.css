@@ -194,7 +194,7 @@ aside {
 .course-experience-top > p {
     padding: 10px 0;
     text-align: center;
-    width: 33.3333333%;
+    flex: 1;
     font-size: small;
     border-right: 1px solid black;
 }
@@ -219,16 +219,16 @@ aside {
     margin-top: 60px;
 }
 .sessions {
-    background-color: rgb(243, 240, 240);
+    background-color: rgb(250, 248, 248);
     top: 140vh;
     position: relative;
-    height: 200vh;
+    height: 425vh;
     width: 100%;
     padding-top: 300px;
     z-index: -1;
 }
 .sessions-text {
-    background-color: rgb(243, 240, 240);
+    background-color: transparent;
     height: 70vh;
     width: 75%;
     margin: 0 auto;
@@ -241,7 +241,7 @@ aside {
     left: 27vw;
     font-weight: 900;
     font-size: 5vw;
-    background: -webkit-linear-gradient(rgb(236, 234, 234), rgb(182, 181, 181));
+    background: -webkit-linear-gradient(#fff, rgb(230, 227, 227));
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -273,7 +273,7 @@ aside {
     display: flex;
     padding: 5px;
     background-color: rgba(184, 178, 178, 0.295);
-    border-left: 5px solid black;
+    border-left: 3px solid black;
 }
 .session-list-top h3 {
     flex: 1;
@@ -291,7 +291,7 @@ aside {
 .session-list-bottom {
     display: flex;
     justify-content: space-evenly;
-    border-left: 5px solid rgb(228, 222, 222);
+    border-left: 3px solid rgb(228, 222, 222);
 }
 .session-list-bottom-text p {
     font-size: 1vw;
@@ -308,6 +308,61 @@ aside {
 .session-list-bottom-img img {
     width: 60px;
 }
+.masters {
+    background-color: white;
+    height: 650px;
+    width: 100%;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+.masters .title > h1 {
+    font-size: 1.5vw;
+    text-align: center;
+    z-index: 1;
+}
+.masters-items {
+    display: flex;
+    margin-top: -100px;
+    padding: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.masters-item {
+    padding: 20px 10px;
+}
+.masters-item img {
+    width: 140px;
+}
+.masters-item p {
+    font-size: 0.9vw;
+    margin-top: 7px;
+}.masters-item h5 {
+    margin-top: 7px;
+}
+.course-fee-section {
+    background-color: #EBE5E5;
+    top: 140vh;
+    position: relative;
+    height: 425vh;
+    width: 100%;
+    padding-top: 300px;
+    z-index: -2;
+}
+.course-fee {
+    background-color: white;
+    height: 500px;
+    width: 75%;
+    margin: 150px auto;
+    border-radius: 20px;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    border: 1px solid;
+}
+
 
 
 
