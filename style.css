@@ -63,7 +63,7 @@ nav {
     flex: 1;
     position: relative;
 }
-.hero-text > a {
+.register-button {
     text-decoration: none;
     color: white;
     background-color: #F46632;
@@ -339,7 +339,8 @@ aside {
 .masters-item p {
     font-size: 0.9vw;
     margin-top: 7px;
-}.masters-item h5 {
+}
+.masters-item h5 {
     margin-top: 7px;
 }
 .course-fee-section {
@@ -359,11 +360,42 @@ aside {
     border-radius: 20px;
     padding: 60px 0;
     position: relative;
-    z-index: 1;
-    border: 1px solid;
 }
-
-
+.course-fee-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: -50px auto;
+}
+.course-fee-bottom-register {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 50px;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+}
+.course-fee-bottom-register h4 {
+    text-decoration: line-through;
+}
+.course-fee-bottom-register p {
+    font-size: 1vw;
+}
+.course-fee-bottom-text ul li {
+    font-size: 0.9vw;
+    margin-top: 18px;
+    list-style-type: none;
+}
+.course-fee > p {
+    font-size: 0.9vw;
+    color: rgba(151, 150, 150, 0.637);
+    text-align: center;
+    margin-top: 120px;
+}
+.space {
+    margin-top: 20px;
+}
 
 
 /* media queries */
