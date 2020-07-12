@@ -6,24 +6,25 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/95df13e0f5.js"></script>
     <title>Product Factory</title>
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav id="nav">
             <div class="logo">
                 <img src="/img/Logo.png" alt="Logo">
             </div>
             <div class="nav-items">
                 <a href="#" class="nav-item">Projects</a>
                 <a href="#" class="nav-item">Partners</a>
-                <a href="#" class="nav-item">FAQ</a>
-                <a href="#" class="nav-item">Masters</a>
-                <a href="#" class="nav-item">Classes</a>
-                <a href="#" class="nav-item">Course Experience</a>
-                <a href="#" class="nav-item">About Us</a>
-                <a href="#" class="nav-item register">Register</a>
-                <div class="hamburger"></div>
+                <a href="#faq" class="nav-item">FAQ</a>
+                <a href="#masters" class="nav-item">Masters</a>
+                <a href="#sessions" class="nav-item">Classes</a>
+                <a href="#experience" class="nav-item">Course Experience</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#fee" class="nav-item register">Register</a>
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </nav>
         <aside class="aside">
@@ -48,7 +49,10 @@
         </div>
     </header>
     <section class="about-us">
-        <div class="about-us-text">
+        <div class="arrow">
+            <a href="#nav"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+        <div id="about" class="about-us-text">
             <div class="about-us-text-top">
                 <img src="/img/product factory content img.svg" alt="">
                 <h1>About Us</h1>
@@ -68,7 +72,7 @@
             <p class="p-text">Today, given the economic and labor market conditions, the best and least risky way to invest in personal assets and skills. UI/UX Product Design Course covers all aspects of product design to user-centric
             research and product research and business vision and digital marketing to product designers and creators, designing the end-user experience and interface of the product and how to deliver it.</p>
         </div>
-        <div class="course-experience-text">
+        <div id="experience" class="course-experience-text">
             <h1>Course Experience</h1>
             <p class="fade-course-experience">Experience</p>
             <div class="course-experience-top">
@@ -86,7 +90,7 @@
         </div>
     </section>
     <section class="sessions">
-        <div class="sessions-text">
+        <div id="sessions" class="sessions-text">
             <div class="title">
                 <h1>Sessions</h1>
                 <p class="fade-sessions">Sessions</p>
@@ -387,7 +391,7 @@
                     </div>
                 </div>
             </div>
-            <div class="masters">
+            <div id="masters" class="masters">
                 <div class="title">
                     <h1>Masters</h1>
                     <p class="fade-sessions">Masters</p>
@@ -448,7 +452,7 @@
         </div>
     </section>
     <section class="course-fee-section">
-        <div class="faq">
+        <div id="faq" class="faq">
             <div class="title">
                 <h1>Frequently Asked Questions</h1>
                 <p class="fade-sessions">FAQ</p>
@@ -476,7 +480,7 @@
                 </div>
             </div>
         </div>
-        <div class="course-fee">
+        <div id="fee" class="course-fee">
             <div class="title">
                 <h1>Course fee</h1>
                 <p class="fade-sessions">Course fee</p>
@@ -541,6 +545,7 @@
             </div>
         </div>
         <img src="/img/logo_dark_bg@2x.png" alt="">
+        <p>Contact Number: 0912-1234567</p>
     </footer>
 </body>
 </html>
